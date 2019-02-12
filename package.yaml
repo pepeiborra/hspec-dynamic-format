@@ -1,0 +1,29 @@
+name: hspec-dynamic-output
+version: 0.1
+description: This package provides a custom formatter for Hspec capable of displaying all the currently running tests
+copyright:
+  - (c) 2019 Jose Iborra Lopez
+maintainer: Pepe Iborra <pepeiborra@gmail.com>
+category: Testing
+stability: experimental
+
+dependencies:
+  - base
+  - ansi-terminal >= 0.5
+  - containers
+  - Diff
+  - exceptions
+  - free
+  - generic-lens
+  - hspec > 2.8.0
+  - hspec-core 2.8.0
+  - lens
+  - silently
+  - transformers
+
+source-dirs:
+  - src
+
+library:
+  exposed-modules:
+    - Test.Hspec.Dynamic.Format
